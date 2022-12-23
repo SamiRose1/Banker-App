@@ -1,0 +1,158 @@
+.section3Container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #d8dee27a;
+}
+.paraSect3 {
+  font-weight: lighter;
+  margin-left: 30px;
+  letter-spacing: 5px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.768);
+}
+
+.operationText {
+  font-size: 20px;
+  letter-spacing: 2px;
+  width: fit-content;
+  background-color: rgba(248, 41, 41, 0.915);
+  color: aliceblue;
+  padding: 8px;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 100px;
+}
+.sec3Toggles {
+  margin-top: 50px;
+  height: 300px;
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(
+    rgba(250, 227, 231, 0.258),
+    rgba(244, 218, 222, 0.181)
+  );
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.09);
+}
+.btn1,
+.btn2,
+.btn3 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+  border-style: none;
+  border-radius: 20px;
+  justify-content: center;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    rgba(245, 167, 208, 0.519),
+    rgba(255, 192, 203, 0.673)
+  );
+}
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+  cursor: pointer;
+}
+.toggleBtns {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.toggleParams {
+  margin-left: 30px;
+  height: 70%;
+  width: 60%;
+  padding: 10px;
+}
+
+.paramH1 {
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.94);
+}
+.paramP {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+.active {
+  box-shadow: 0px 0px 10px rgba(241, 10, 95, 0.749);
+  transition: 0.1s;
+  color: black;
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+}
+@media screen and (max-width: 750px) {
+  .paramH1 {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.94);
+  }
+  .paramP {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+  .btn1,
+  .btn2,
+  .btn3 {
+    padding: 5px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .paramH1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.94);
+    width: 100%;
+    letter-spacing: 0.2px;
+  }
+  .paramP {
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 0.4px;
+  }
+  .btn1,
+  .btn2,
+  .btn3 {
+    padding: 4px;
+    font-size: 12px;
+    margin: 10px;
+    height: 40px;
+  }
+  .toggleParams {
+    width: 90%;
+    margin-left: 10px;
+  }
+  .sec3Toggles {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+  .toggleBtns {
+    display: flex;
+    flex-direction: row;
+  }
+}

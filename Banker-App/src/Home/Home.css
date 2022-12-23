@@ -1,0 +1,288 @@
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    rgba(229, 225, 222, 0.732),
+    rgba(233, 219, 219, 0.49)
+  );
+}
+.userName {
+  width: 100%;
+  display: block;
+  height: fit-content;
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.currentBalance {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.currentBalance span {
+  font-size: 25px;
+  color: black;
+}
+.balanceContainer span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.balanceContainer {
+  max-height: 70vh;
+  min-height: 65vh;
+  width: 50%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid rgb(175, 170, 170);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(82, 81, 81, 0.726);
+  overflow: scroll;
+  overscroll-behavior: inherit;
+}
+.deposit,
+.withdraw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+.deposit h3,
+.withdraw h3 {
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deposit h3 {
+  background-color: rgb(61, 200, 61);
+}
+.withdraw h3 {
+  background-color: rgba(245, 51, 51, 0.936);
+}
+.amount {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.operationContainer {
+  width: 20%;
+  margin-top: 80px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.transferTrans,
+.depositTrans,
+.withdrawTrans,
+.loanTrans,
+.closeAccount {
+  padding: 10px;
+  width: 80%;
+  height: 20%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.416);
+}
+.transferTrans p,
+.withdrawTrans p,
+.loanTrans p,
+.closeAccount p {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.input {
+  width: 60%;
+  height: 25%;
+  border-radius: 10px;
+  border-style: none;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+.logoutBtn,
+.backBtn {
+  margin-top: 30px;
+  border-style: none;
+  padding: 6px;
+  background-color: rgb(0, 207, 14);
+  color: white;
+  border-radius: 20px;
+  width: 100px;
+}
+.backBtn {
+  background-color: black;
+}
+.logoutBtn:hover,
+.backBtn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+  transition: 0.2s ease-in-out;
+}
+.withdrawTrans {
+  background: rgb(49, 247, 69);
+}
+.loanTrans {
+  background: rgb(179, 179, 179);
+}
+.transferTrans {
+  background: orange;
+}
+.closeAccount {
+  background: red;
+}
+.btn {
+  border-style: none;
+  border-radius: 10px;
+  background-color: aliceblue;
+  color: black;
+  font-size: 20px;
+  width: 50px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.711);
+  transition: 0.2s ease-in-out;
+}
+.menuBtn {
+  display: none;
+}
+.menuBtn:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .userName {
+    display: none;
+  }
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  .operationContainer {
+    width: 50%;
+  }
+  .balanceContainer {
+    width: 50%;
+  }
+  .hidden {
+    display: none;
+    width: 100vh;
+  }
+  .menuBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+  }
+  .transferTrans p,
+  .withdrawTrans p,
+  .loanTrans p,
+  .closeAccount p {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+  .deposit h3,
+  .withdraw h3 {
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 20px;
+    color: white;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .userName {
+    display: none;
+  }
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  .operationContainer {
+    width: 50%;
+    height: fit-content;
+  }
+  .balanceContainer {
+    width: 50%;
+    height: 80vh;
+  }
+  .hidden {
+    display: none;
+    width: 100vh;
+  }
+  .menuBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+  }
+  .transferTrans p,
+  .withdrawTrans p,
+  .loanTrans p,
+  .closeAccount p {
+    color: white;
+    font-size: 15px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    letter-spacing: 0.5px;
+  }
+  .deposit h3,
+  .withdraw h3 {
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 20px;
+    color: white;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

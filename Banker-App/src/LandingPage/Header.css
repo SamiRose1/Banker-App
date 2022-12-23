@@ -1,0 +1,158 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.anchorContainer {
+  display: flex;
+  width: min(600px, 800px);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anchorContainer button:hover,
+.openAccount:hover,
+.loginBtn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.447);
+  transition: 0.3s ease-in-out;
+  background-color: rgb(255, 144, 144);
+  color: aliceblue;
+}
+.openAccount {
+  align-items: center;
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgba(38, 206, 72, 0.934);
+  padding: 8px;
+  color: aliceblue;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.loginBtn {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin-right: 30px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  border-radius: 20px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  background-color: aliceblue;
+  position: fixed;
+  width: 100%;
+  opacity: 80%;
+}
+.feature,
+.testimonial,
+.operation {
+  background: none;
+  border-style: none;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  font-weight: lighter;
+  background: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.headerMenu {
+  display: none;
+}
+.headerLogo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 750px) {
+  .headerMenu {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .anchorContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    height: max-content;
+    border-style: none;
+    margin-top: 20px;
+  }
+  .feature,
+  .testimonial,
+  .operation,
+  .openAccount,
+  .loginBtn {
+    display: none;
+    color: black;
+    font-size: 15px;
+    margin: 20% auto;
+  }
+
+  .loginBtn {
+    background: black;
+    color: whitesmoke;
+  }
+
+  .openAccount {
+    color: white;
+  }
+  .headerMenu {
+    margin-left: 10px;
+  }
+  .headerMenu img {
+    width: 20px;
+    height: 20px;
+    border-style: none;
+    margin: 0% auto;
+  }
+
+  .headerResponse {
+    height: 100vh;
+    width: 50%;
+    border: 1px solid rgba(83, 212, 255, 0.721);
+    background-color: whitesmoke;
+    opacity: 95%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .adding {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .headerContainer {
+    height: 1rem;
+  }
+  .headerResponse {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .headerMenu {
+    border-style: none;
+  }
+}

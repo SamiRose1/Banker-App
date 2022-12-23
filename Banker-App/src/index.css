@@ -1,0 +1,14 @@
+.headerMenu {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .anchorContainer {
+    border: 1px solid black;
+  }
+  .headerMenu {
+    border: 1px solid hotpink;
+    display: block;
+    margin: ;
+  }
+}
